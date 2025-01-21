@@ -1,0 +1,226 @@
+{% extends "base.html"%}
+{% load static %}
+{% block content %}
+<style>
+  /* Estilos CSS aquí */
+  .recent-posts-container a.titulo_blog {
+    color: #000000;
+    transition: color 0.3s;
+  }
+
+  .recent-posts-container a.titulo_blog:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+</style>
+
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row">
+      <div id="content1" class="col-md-8 ftco-animate">
+        <div class="blog-entry">
+          <a href="blog-single.html" class="block-20 d-flex align-items-end justify-content-end" style="background-image: url({% static 'images/blog1.png' %});">
+            <div class="meta-date text-center p-2">
+              <span class="day">03</span>
+              <span class="mos">Janeiro</span>
+              <span class="yr">2024</span>
+            </div>
+          </a>
+          <div class="text bg-white p-4">
+            <h3 class="heading"><a href="#"><strong>Café e Clareamento Dental: Um Mito Desmentido?</strong></a></h3>
+            <p>Um dos mitos mais comuns que circulam em torno do clareamento dental é que você deve evitar tomar café durante ou após o tratamento para obter os melhores resultados. Mas o quanto isso é verdade?</p>
+            <p><strong>Mito Popular</strong></p>
+            <p>Muitas pessoas, e até mesmo alguns dentistas, acreditam firmemente na ideia de que durante um clareamento dental, você deve evitar o consumo de café, chá ou outras bebidas escuras. Esse mito sugere que essas bebidas interferirão no processo de clareamento, levando a perguntas como "O que posso comer ou beber durante o clareamento dental?"</p>
+            <p><strong>A Verdade: Não há Necessidade de Deixar o Café</strong></p>
+            <p>A evidência científica nos diz outra história. Não é necessário desistir do café, sucos escuros ou até mesmo chocolate durante ou após o clareamento dental. Essas bebidas não afetarão negativamente os efeitos do tratamento se for realizado com base científica e técnica adequada.</p>
+            <p><strong>Responsabilidade Compartilhada</strong></p>
+            <p>É importante notar que, às vezes, os pacientes são responsabilizados pela falta de eficácia ou durabilidade do tratamento de clareamento devido a não seguir uma "dieta branca". No entanto, é essencial lembrar que o clareamento dental é um tratamento, não uma única sessão. Pode exigir várias sessões, seja na clínica ou em casa, dependendo do diagnóstico e das causas específicas da descoloração dental.</p>
+            <p><strong>Um Sorriso Radiante</strong></p>
+            <p>Em última análise, o objetivo do clareamento dental vai além de simplesmente clarear os dentes. Pode envolver uma mudança no matiz dos dentes para alcançar um sorriso mais claro e rejuvenescido, associado hoje em dia à estética dental e à beleza.</p>
+            <p>Então, da próxima vez que você desfrutar da sua xícara de café favorita, não se sinta culpado! Contanto que seu clareamento dental seja feito corretamente, você poderá manter um sorriso brilhante sem preocupações.</p>
+            <p>Lembre-se de que cada caso é único, e o melhor é consultar o seu dentista para um plano de tratamento personalizado. Em última análise, uma abordagem científica e profissional é a chave para um sorriso radiante e confiante.</p>
+            <p>Continue aproveitando seu café enquanto mantém esse belo sorriso!</p>
+           
+            <div class="d-flex align-items-center mt-4">
+              {% comment %} <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p> {% endcomment %}
+              <p class="ml-auto mb-0">
+                <a href="#" class="mr-2">Admin</a>
+                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="content2"  class="col-md-8 ftco-animate" style="display: none;">
+        <div class="blog-entry">
+          <a href="blog-single.html" class="block-20 d-flex align-items-end justify-content-end" style="background-image: url({% static 'images/blog2.png' %});">
+            <div class="meta-date text-center p-2">
+              <span class="day">15</span>
+              <span class="mos">Fevereiro</span>
+              <span class="yr">2024</span>S
+            </div>
+          </a>
+          <div class="text bg-white p-4">
+            <h3 class="heading"><a href="#"><strong>Por que Levar as Crianças ao Ortodontista?</strong></a></h3>
+            <p>Quanto mais cedo você levar seu filho ao ortodontista, melhor será para ele a longo prazo. Para ajudar você a decidir quando é o melhor momento para levar seu pequeno para uma visita ao nosso ortodontista familiar, hoje contamos todos os benefícios das consultas precoces e respondemos a algumas das perguntas mais frequentes que recebemos sobre tratamentos ortodônticos:</p>
+            
+            <p><strong>Qual a idade apropriada para a primeira visita ao ortodontista?</strong></h2>
+            <p>O melhor momento para a primeira visita de uma criança ao ortodontista deve ser aos sete anos. No entanto, não se preocupe se seus filhos têm oito, nove ou mais anos e perderam esta revisão precoce. Você ainda pode agendar uma consulta para eles hoje e descobrir se há problemas de desenvolvimento que necessitem de tratamento ortodôntico.</p>
+            
+            <p><strong>A quais sinais devemos estar atentos os pais?</strong></h2>
+            <p>Existem alguns sintomas específicos que os pais devem observar em seus filhos, pois são indicadores de que precisam de uma avaliação com o ortodontista. Alguns desses sinais são:</p>
+            <ul>
+                <li>Chupar o dedo ou uso de chupeta além dos três ou quatro anos</li>
+                <li>Sobremordida ou submordida evidente, onde os dentes superiores ou inferiores não se encaixam e os lábios não podem fechar naturalmente</li>
+                <li>Separados dentes permanentes</li>
+                <li>Dentes permanentes muito próximos e sobrepostos (apinhamento dental)</li>
+                <li>Dentes permanentes tortos</li>
+                <li>Problemas para morder e mastigar</li>
+                <li>Mandíbula que estala ao morder, mastigar ou falar</li>
+                <li>Morder frequentemente a parte interna das bochechas</li>
+                <li>Respiração mais pela boca do que pelo nariz</li>
+                <li>Ronco frequente enquanto dorme</li>
+            </ul>
+            
+            <p><strong>Por que examinar as crianças nessa idade?</strong></p>
+            <p>Embora os dentes de seu filho possam parecer retos, podem haver problemas que não são visíveis a olho nu. Por exemplo, às vezes um dente de leite não cai, mas o dente permanente continua se desenvolvendo e pode sair na frente ou atrás do dente de leite ou até em um ângulo. Se isso acontecer, os outros dentes podem se deslocar e se torcer.</p>
+            
+            <p>Outro motivo para visitar o ortodontista precocemente é controlar o crescimento e desenvolvimento adequado da mandíbula. Se a mandíbula de seu filho não estiver crescendo rápido o suficiente, mas os molares e os dentes permanentes estiverem se desenvolvendo mais rapidamente, pode ocorrer apinhamento nos dentes. Além disso, a mordida da mandíbula é verificada para ver se seu filho poderia desenvolver uma sobremordida ou uma submordida.</p>
+            
+            <p>Se o ortodontista de seu filho descobrir problemas potenciais, diferentes recomendações podem ser feitas com base no tipo de problema. Os ortodontistas levarão em consideração a idade das crianças, suas necessidades específicas de tratamento e seu desenvolvimento psicológico ao fazer suas recomendações.</p>
+            
+            <p>Se não houver problemas, geralmente é marcada uma visita de acompanhamento um ou dois anos depois. Esta visita de acompanhamento é igualmente importante, pois verifica se os dentes e a mandíbula continuam se desenvolvendo corretamente. Por outro lado, se já existirem problemas, pode ser recomendado um tratamento de desenvolvimento precoce.</p>
+            
+            <p><strong>Quais são as vantagens dos tratamentos precoces?</strong></p>
+            <p>Há muitos benefícios para seu filho se ele receber um tratamento ortodôntico precoce. Atender aos problemas desde o início evita que piorem. Além disso, outros problemas de desenvolvimento durante os anos de crescimento são prevenidos. Outras vantagens dos tratamentos precoces são:</p>
+           
+            <div class="d-flex align-items-center mt-4">
+              {% comment %} <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p> {% endcomment %}
+              <p class="ml-auto mb-0">
+                <a href="#" class="mr-2">Admin</a>
+                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="content3" class="col-md-8 ftco-animate" style="display: none;">
+        <div class="blog-entry">
+          <a href="blog-single.html" class="block-20 d-flex align-items-end justify-content-end" style="background-image: url({% static 'images/blog3.png' %});">
+            <div class="meta-date text-center p-2">
+              <span class="day">20</span>
+              <span class="mos">Março</span>
+              <span class="yr">2024</span>
+            </div>
+          </a>
+          <div class="text bg-white p-4">
+            <h3 class="heading"><a href="#"><strong>Apneia do Sono: O que é e Como Seu Dentista Pode Ajudar</strong></a></h3>
+            <p>É pouco conhecido que os dentistas e clínicas dentárias desempenham um papel fundamental no tratamento da apneia do sono. Por isso, queremos falar neste post sobre o que é a apneia do sono, qual é a sua relação com a saúde bucal e como podemos ajudá-lo na Clínica Médico Dental Albelu.</p>
+            
+            <p><strong>O que é apneia do sono?</strong></h2>
+            <p>A apneia do sono é um dos distúrbios do sono mais comuns. Sua denominação exata é apneia obstrutiva do sono (AOS). E trata-se de uma doença que afeta a respiração das pessoas que a têm enquanto estão dormindo.</p>
+            
+            <p>Ou seja, esses pacientes experimentam pausas na respiração que podem ser totais ou parciais e apresentar uma duração que varia de segundos a vários minutos. Isso afeta diretamente a qualidade do descanso, pois em cada interrupção o sono passa de profundo a superficial.</p>
+            
+            <p><strong>Sintomas</strong></h3>
+            <p>Os sintomas mais comuns da apneia obstrutiva do sono são a falta de ar e os roncos. Embora essa patologia também se manifeste através de uma série de efeitos secundários que surgem como consequência da falta de sono ou da baixa qualidade do descanso provocada pela mesma.</p>
+            
+            <p>Uma pessoa que sofre de apneia do sono pode:</p>
+            <ul>
+                <li>Dormir enquanto realiza ações cotidianas como assistir televisão, dirigir ou ler.</li>
+                <li>Sentir-se cansada ou com muito sono durante todo o dia.</li>
+                <li>Experimentar dores de cabeça frequentes.</li>
+                <li>Acordar de manhã com a sensação de não ter dormido a noite toda.</li>
+                <li>Ter mudanças de humor e problemas de memória.</li>
+            </ul>            
+            <p>É fundamental diagnosticar rapidamente e corretamente a AOS, pois a apneia do sono, quando não tratada, pode levar a complicações graves como problemas cardíacos, derrames cerebrais e até mesmo obesidade.</p>
+            
+            <p><strong>O Papel do Dentista na Apneia do Sono</strong></h2>
+            <p>Como mencionamos no início, os dentistas têm uma função essencial no tratamento da apneia do sono. Se uma pessoa suspeitar que pode ter essa patologia, deve procurar o médico de família, mas não deve esquecer de visitar também a clínica dentária.</p>
+            
+            <p>Por que os dentistas são os profissionais adequados para tratar esse distúrbio do sono? Bem, a relação está no fato de que, embora a apneia possa ser causada por condições nas amígdalas, obstrução da faringe, distúrbios ventilatórios pulmonares ou outros problemas que impedem a passagem do ar, muitas vezes pode ser causada por problemas na boca, na estrutura da mandíbula ou defeitos maxilofaciais.</p>
+            
+            <p>Portanto, deve ser tratada na área odontológica, porque os dentistas são parte importante do manejo da apneia do sono.</p>
+            
+            <p>No caso de ser um problema odontológico, o tratamento mais frequente e eficaz nesses casos é a colocação de um aparelho intra bucal , feito sob medida para cada paciente, que, ao ser usado durante a noite, permite manter a correta abertura das vias aéreas superiores do paciente para evitar tanto os roncos como a falta de ar e as interrupções na respiração.</p>
+               
+            <div class="d-flex align-items-center mt-4">
+              {% comment %} <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p> {% endcomment %}
+              <p class="ml-auto mb-0">
+                <a href="#" class="mr-2">Admin</a>
+                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="pl-3 mb-4">Postagens Recentes</h2>
+        <div class="recent-posts-container">
+          <div class="row mb-4">
+            <div class="col-4">
+                <a href="#" onclick="showContent(1)"><img src="{% static 'images/blog1.png' %}" alt="" class="img-fluid"></a>
+            </div>
+            <div class="col-8 pl-0">
+                <a href="#" onclick="showContent(1)" class="titulo_blog font-weight-bold">Café e Clareamento Dental: Um Mito Desmentido?</a>
+                <p class="font-14 mt-1">03 Janeiro, 2024</p>
+            </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-4">
+                    <a href="#" onclick="showContent(2)"><img src="{% static 'images/blog2.png' %}" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-8 pl-0">
+                    <a href="#" onclick="showContent(2)" class="titulo_blog font-weight-bold">Por que Levar as Crianças ao Ortodontista?</a>
+                    <p class="font-14 mt-1">15 Fevereiro, 2024</p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-4">
+                    <a href="#" onclick="showContent(3)"><img src="{% static 'images/blog3.png' %}" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-8 pl-0">
+                    <a href="#" onclick="showContent(3)" class="titulo_blog font-weight-bold">Apneia do Sono: O que é e Como Seu Dentista Pode Ajudar</a>
+                    <p class="font-14 mt-1">20 Março, 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+{% block scrips%}
+<script>
+  // Función para mostrar el contenido según el título
+  function showContent(num) {
+    // Ocultar todos los contenidos
+    var contents = document.getElementsByClassName("col-md-8 ftco-animate");
+    for (var i = 0; i < contents.length; i++) {
+      contents[i].style.display = "none";
+    }
+    
+    // Mostrar el contenido correspondiente al título clickeado
+    var contentToShow = document.getElementById("content" + num);
+    if (contentToShow) {
+      contentToShow.style.display = "block";
+    }
+  }
+
+  // Mostrar por defecto el contenido del primer título al cargar la página
+  window.onload = function() {
+    showContent(1);
+  };
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded",function(){
+    $('.nav-link').removeClass('active');
+    $('#blog-navlink').addClass('active');
+   
+  });
+</script>
+{% endblock %}

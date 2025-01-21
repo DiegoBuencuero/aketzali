@@ -1,0 +1,167 @@
+{% extends "base.html"%}
+{% load static %}
+{% block content %}
+<section class="about">
+  <div class="container ftco-animate">       
+    <div class="row">      
+      <div class="col-lg-6 pt-3 pt-lg-0 content mt-4 mb-5 mt-5">
+        <h3>Bem-Vindos ao Nosso Espaço de Sorrisos</h3>
+       
+        <p class="me-4 " style="line-height: 2; font-size: 16px;">Entre em um ambiente acolhedor e moderno, onde cada sorriso é uma obra de arte. No nosso consultório odontológico, unimos conforto com tecnologia de última geração para oferecer a melhor atenção em estética e ortodontia. Nossa equipe dedicada está pronta para te guiar em cada passo do caminho rumo a um sorriso brilhante e saudável. </p>
+        <p class="me-4" style="line-height: 2;font-size: 16px;">Venha descobrir o poder de um sorriso transformador conosco hoje mesmo!.</p>
+      
+      </div>
+      <div class="col-lg-6 align-self-baseline position-relative mt-5 mb-4">
+        <img src="{% static 'images/clinica2.jpg' %}" class="img-fluid rounded custom-rounded mb-3" alt="" style="width: 100%; height: 100%;">        
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about">
+  <div class="container ftco-animate">       
+    <div class="row">
+      <div class="col-lg-6 align-self-baseline position-relative mt-5 mb-5">
+        <img src="{% static 'images/clinica1.jpg' %}" class="img-fluid rounded custom-rounded" alt="" style="width: 100%; height: 100%;">        
+      </div>
+      <div class="col-lg-6 pt-3 pt-lg-0 content mt-5">
+        <h3>Na Vanguarda da Estética e Ortodontia</h3>
+      
+        <p class="me-4" style="line-height:2; font-size: 16px;">Descubra um novo modo de cuidar do seu sorriso! Aqui, unimos tecnologia e conforto para oferecer o melhor em estética e ortodontia. </p>
+        <p class="me-4" style="line-height: 2; font-size: 16px;">Nossa equipe está pronta para te ajudar a conquistar um sorriso saudável e bonito. Venha nos visitar e sorria com confiança!</p>
+       
+      </div>
+    </div>
+  </div>
+</section><!-- End About Section -->
+
+
+{% comment %} <section class="about">
+  <div class="container ftco-animate">       
+    <div class="row">
+      <div class="col-lg-6 align-self-baseline position-relative mt-5 mb-4">
+        <img src="{% static 'images/clinica2.jpeg' %}" class="img-fluid rounded custom-rounded" alt="" style="width: 100%; height: 100%;">        
+      </div>
+      <div class="col-lg-6 pt-3 pt-lg-0 content mt-5">
+        <h3>Na Vanguarda da Estética e Ortodontia</h3>
+      
+        <p class="me-4" style="line-height: 1.7; font-size: 16px;">Entre em um ambiente acolhedor e moderno, onde cada sorriso é uma obra de arte. No nosso consultório odontológico, unimos conforto com tecnologia de última geração para oferecer a melhor atenção em estética e ortodontia. </p>
+        <p class="me-4" style="line-height: 1.7; font-size: 16px;">Desde a primeira visita, nossa equipe dedicada está pronta para guiá-lo em cada passo do caminho rumo a um sorriso brilhante e saudável. Venha descobrir o poder de um sorriso transformador conosco hoje mesmo. O seu sorriso é a nossa prioridade.</p>
+       
+      </div>
+    </div>
+  </div>
+</section><!-- End About Section --> {% endcomment %}
+
+{% comment %} 
+<section class="ftco-intro" style="background-image: url({% static 'images/bg_3.jpg' %});" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h2>We Provide Free Dental Care Consultation</h2>
+        <p class="mb-0">Your Health is Our Top Priority with Comprehensive, Affordable medical.</p>
+        <p></p>
+      </div>
+      <div class="col-md-3 d-flex align-items-center">
+        <p class="mb-0"><a href="#" class="btn btn-odonto px-4 py-3">Free Consutation</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section testimony-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-2">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+        <span class="subheading">Testimonials</span>
+        <h2 class="mb-4">Our Patients Says About Us</h2>
+      </div>
+    </div>
+    <div class="row ftco-animate justify-content-center">
+      <div class="col-md-12">
+        <div class="carousel-testimony owl-carousel">
+          <div class="item">
+            <div class="testimony-wrap d-flex">
+              <div class="user-img" style="background-image: url({% static 'images/person_1.jpg' %})">
+              </div>
+              <div class="text pl-4 bg-light">
+                <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p class="name">Racky Henderson</p>
+                <span class="position">Farmer</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap d-flex">
+              <div class="user-img" style="background-image: url({% static 'images/person_2.jpg' %})">
+              </div>
+              <div class="text pl-4 bg-light">
+                <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p class="name">Henry Dee</p>
+                <span class="position">Businessman</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap d-flex">
+              <div class="user-img" style="background-image: url({% static 'images/person_3.jpg' %})">
+              </div>
+              <div class="text pl-4 bg-light">
+                <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p class="name">Mark Huff</p>
+                <span class="position">Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap d-flex">
+              <div class="user-img" style="background-image: url({% static 'images/person_4.jpg' %})">
+              </div>
+              <div class="text pl-4 bg-light">
+                <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p class="name">Rodel Golez</p>
+                <span class="position">Striper</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap d-flex">
+              <div class="user-img" style="background-image: url({% static 'images/person_1.jpg' %})">
+              </div>
+              <div class="text pl-4 bg-light">
+                <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p class="name">Ken Bosh</p>
+                <span class="position">Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> {% endcomment %}
+{% endblock %}
+{% block scrips%}
+<script>
+  document.addEventListener("DOMContentLoaded",function(){
+    $('.nav-link').removeClass('active');
+    $('#about-navlink').addClass('active');
+   
+  });
+</script>
+{% endblock %}
