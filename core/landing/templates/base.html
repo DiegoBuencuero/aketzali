@@ -10,8 +10,8 @@
     <meta name="ahrefs-site-verification" content="b05d833db4697e6c367bbb278886fea81780edd885b09cdb86d6ceb4430b374f">
 
 
-    <title>Taína Köster</title>
-    <link href="{% static 'images/muela.png' %}" rel="icon">
+    <title>Aketzali</title>
+    <link href="{% static 'images/ake1.png' %}" rel="icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -37,10 +37,19 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% block head %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    {% endblock %}
-  
+    {% endblock %}  
   </head>
-
+  <style>
+    .navbar-nav .nav-item .nav-link {
+      color: #ffffff; /* Color base del texto */
+      transition: color 0.3s ease-in-out; /* Transición suave */
+    }
+    
+    .navbar-nav .nav-item .nav-link:hover {
+      color: #f8c10e; /* Color del texto al pasar el cursor */
+      text-decoration: none; /* Opcional, asegura que no aparezca subrayado */
+    }
+  </style>
   <body>
     <div class="bg-light">
       <div class="py-md-5 py-0 ">
@@ -82,12 +91,12 @@
           </button>
           <div class="collapse navbar-collapse mt-3 mb-3" id="ftco-nav">
             <ul class="navbar-nav m-auto">
-              <li class="nav-item me-5" id="index-navlink"><a href='{% url "index" %}' class="nav-link pl-0">Home</a></li>
-              <li class="nav-item me-5" id="about-navlink"><a href='{% url "about" %}' class="nav-link">Clínica</a></li>
-              <li class="nav-item me-5" id="doctors-navlink"><a href='{% url "doctors" %}' class="nav-link">Taína Köster</a></li>
-              <li class="nav-item " id="services-navlink"><a href='{% url "services" %}' class="nav-link">Tratamentos</a></li>
+              <li class="nav-item me-5" id="index-navlink"><a href="#home" class="nav-link pl-0">Home</a></li>
+              <li class="nav-item me-5" id="about-navlink"><a href="#sobremi" class="nav-link">Sobre mí</a></li>
+              <li class="nav-item me-5" id="doctors-navlink"><a href="#productos" class="nav-link">Productos</a></li>
+              <li class="nav-item " id="services-navlink"><a href="#contacto" class="nav-link">Contacto</a></li>
                {% comment %} <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>{% endcomment %}
-              <li class="nav-item" id="blog-navlink"><a href='{% url "blog" %}' class="nav-link">Blog</a></li> 
+              {% comment %} <li class="nav-item" id="blog-navlink"><a href='{% url "blog" %}' class="nav-link">Blog</a></li>  {% endcomment %}
               {% comment %} <li class="nav-item" id="contact-navlink"><a href='{% url "contact" %}'class="nav-link">Contato</a></li> {% endcomment %}
             </ul>
           </div>
@@ -103,121 +112,61 @@
           <img src="{% static 'images/whatsapp.png' %}" alt="WhatsApp" />
       </a>
   </div>
-		
-    {% comment %} <footer class="ftco-footer bg-custom ftco-section"> {% endcomment %}
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-1">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-5">
-              <h2 class="ftco-heading-2 logo">Ortodontia - Estética</h2>
-              <p>A estética do sorriso reflete a saúde bucal: nossos tratamentos proporcionam um sorriso bonito e funcional</p>
-            </div>
-            {% comment %} <div class="ftco-footer-widget mb-5">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-
-	            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div> {% endcomment %}
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-5 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a  href='{% url "index" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                <li><a  href='{% url "about" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Sobre Nós</a></li>
-                <li><a  href='{% url "doctors" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Taína Köster</a></li>
-                <li><a  href='{% url "services" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Tratamentos</a></li>
-                {% comment %} <li><a  href='{% url "contact" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Contato</a></li> {% endcomment %}
-              </ul>
-            </div>
-          
-           
-            {% comment %} <div class="ftco-footer-widget mb-5 ml-md-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Neurolgy</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Dentist</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Ophthalmology</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Cardiology</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Surgery</a></li>
-              </ul>
-            </div> {% endcomment %}
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-5">
-              <div class="ftco-footer-widget mb-5 ml-md-4">
-                <h2 class="ftco-heading-2">Tratamentos</h2>
-                <ul class="list-unstyled">
-                  <li><a href='{% url "services" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Ortodontia</a></li>
-                  <li><a href='{% url "services" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Clareamento</a></li>
-                  <li><a href='{% url "services" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Restaurações</a></li>
-                  <li><a href='{% url "services" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Bruxismo</a></li>
-                  <li><a href='{% url "services" %}'><span class="ion-ios-arrow-round-forward mr-2"></span>Prevenção</a></li>
-              </ul>                           </div>
-              
-              {% comment %} <h2 class="ftco-heading-2">Recent Blog</h2>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Sept. 20, 2019</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div> {% endcomment %}
-              {% comment %} <div class="block-21 mb-5 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Sept. 20, 2019</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div> {% endcomment %}
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-5">
-              <div class="ftco-footer-widget mb-5 ml-md-4">
-                <h2 class="ftco-heading-2">Contato</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#"><span class="icon icon-map-marker mr-2"></span>MEDPLEX , R. Gomes Jardim 201, sala 513 -Torre saúde- POA, RS</a></li>
-                  <li><a href="#"><span class="icon icon-phone mr-2"></span>(55) 996119565</a></li>
-                  <li><a href="#"><span class="icon icon-envelope mr-2"></span>dratainakoster@gmail.com</a></li>   
-                  <i class="bi bi-whatsapp"></i>         
-                </ul>
-                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-1">
-                  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100066648942875&mibextid=LQQJ4d"><span class="icon-facebook"></span></a></li>
-                  <li class="ftco-animate"><a href="https://www.instagram.com/dentista.tainakoster/"><span class="icon-instagram"></span></a></li>                 
-                </ul>
-              </div>              
-            </div>
-          </div>          
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | </i> by <a href="https://innobrar.com.br" target="_blank">Innobrar Solutions</a>
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-1">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-5">
+            <h2 class="ftco-heading-2 logo">AKETZALI</h2>
+            <p>Cuidar da saúde e do equilíbrio energético é essencial para bem-estar. Nossos produtos e serviços são pensados para transformar cada ambiente e sorriso com harmonia e beleza.</p>
+          </div>           
         </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-5 ml-md-4">
+            <h2 class="ftco-heading-2">Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="#home"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+              <li><a href="#sobremi"><span class="ion-ios-arrow-round-forward mr-2"></span>Sobre mí</a></li>
+              <li><a href="#productos"><span class="ion-ios-arrow-round-forward mr-2"></span>Productos</a></li>
+              <li><a href="#contacto"><span class="ion-ios-arrow-round-forward mr-2"></span>Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-5">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">Tratamientos</h2>
+              <ul class="list-unstyled">
+                <li><a href="#productos"><span class="ion-ios-arrow-round-forward mr-2"></span>Ortodoncia</a></li>
+                <li><a href="#productos"><span class="ion-ios-arrow-round-forward mr-2"></span>Clareamiento</a></li>
+                <li><a href="#productos"><span class="ion-ios-arrow-round-forward mr-2"></span>Restaurações</a></li>
+                <li><a href="#productos"><span class="ion-ios-arrow-round-forward mr-2"></span>Bruxismo</a></li>
+                <li><a href="#productos"><span class="ion-ios-arrow-round-forward mr-2"></span>Prevenção</a></li>
+              </ul>                           
+            </div>          
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-5">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">Contato</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon icon-map-marker mr-2"></span>MEDPLEX, R. Gomes Jardim 201, sala 513 -Torre saúde- POA, RS</a></li>
+                <li><a href="#"><span class="icon icon-phone mr-2"></span>(55) 996119565</a></li>
+                <li><a href="#"><span class="icon icon-envelope mr-2"></span>dratainakoster@gmail.com</a></li>   
+              </ul>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-1">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100066648942875&mibextid=LQQJ4d"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/dentista.tainakoster/"><span class="icon-instagram"></span></a></li>                 
+              </ul>
+            </div>              
+          </div>
+        </div>          
       </div>
-    </footer>
+    </div>
+  </footer>
+  
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
