@@ -8056,7 +8056,7 @@ h1, h2, h3, h4, h5,
     -ms-border-radius: 50%;
     border-radius: 50%; }
     .topper .icon span {
-      color: #0040a1; }
+      color: #42a4ca; }
   .topper .text {
     width: calc(100% - 50px); }
     .topper .text p {
@@ -8071,7 +8071,7 @@ h1, h2, h3, h4, h5,
         font-size: 14px;
         color: #000000; }
         .topper .text .con span:first-child {
-          color: #0f0d79; }
+          color: #42a4ca; }
     .topper .text .hr span {
       color: #000000;
       font-weight: 600;
@@ -8081,13 +8081,13 @@ h1, h2, h3, h4, h5,
       color: #0f0d79; }
 
 .ftco-navbar-light {   /*fondo del nav*/
-  background: #0f3369 !important;
+  background: #42a4ca !important;
   opacity: .9;
   z-index: 3;
   padding: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #0f3369 !important;
+      background: #42a4ca !important;
       position: relative;
       top: 0;
       padding: 10px 15px; } }
@@ -9842,7 +9842,7 @@ opacity: .8; }
 }
 
 .background-img {
-  height: 100%;
+  height: 50%;
   width: 100%;
   background-size: cover;
   background-position: center;
